@@ -1,11 +1,4 @@
-.banner {
-    background-color: lightslategrey;
-    color: white;
-    margin-top: 75px;
-    text-align: center;
-}
-
-.resume {
+.banner, .resume {
     background-color: lightslategrey;
     color: white;
     margin-top: 75px;
