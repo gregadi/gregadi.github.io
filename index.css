@@ -1,5 +1,8 @@
-.banner {
+body {
     background-color: lightslategrey;
+}
+
+.banner, .Project-2 {
     color: white;
     margin-top: 75px;
     text-align: center;
@@ -16,7 +19,6 @@
 }
 
 .image-BYOW {
-    background-color: lightslategrey;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -28,10 +30,14 @@
     margin-right: 10px;
 }
 
-h3 {
-    margin-bottom: 0;
+.image-NGordNet img {
+    height: 40%;
+    width: 40%; 
+    margin-right: 10px;
 }
 
-.image-BYOW {
-    margin-top: 0;
+.image-NGordNet {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
