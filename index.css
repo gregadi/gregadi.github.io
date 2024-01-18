@@ -36,6 +36,10 @@ a {
     color: rgb(0, 216, 216); 
 }
 
+#orange {
+    color: rgb(255, 102, 0);
+}
+
 .intro {
     display: flex;
 }
@@ -49,6 +53,13 @@ a {
 
 .about, .Project-1, .Project-2 {
     color: white;
+    margin-top: 75px;
+    text-align: center;
+}
+
+.resume {
+    background-color: white;
+    color: black;
     margin-top: 75px;
     text-align: center;
 }
@@ -109,11 +120,81 @@ body {
     padding-top: 50px;
 }
 
-#home, #about, #project1, #project2 {
+#home, #about, #project1, #project2, #resume {
     padding: 30px;
     margin-top: 30px; 
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+.education-section {
+    width: 100%;
+}
+
+.education-entry {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Adjust the space between entries */
+    position: relative; /* Context for absolute positioning of the pseudo-element */
+}
+
+.degree-info, .school-description {
+    flex: 1; /* Both sides will share the available space equally */
+    display: flex; /* Enables flexbox for centering */
+    align-items: center; /* Vertically centers the degree-content and school-content */
+    justify-content: center; /* Horizontally centers the degree-content and school-content */
+    text-align: center; /* Ensures text within is centered */
+    padding: 20px; /* Provides some spacing */
+}
+
+/* Vertical line pseudo-element */
+.education-entry::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    bottom: 0;
+    width: 2px; /* Line thickness */
+    background-color: #ccc; /* Line color */
+    z-index: 1;
+}
+
+.degree-content, .school-content {
+    padding: 20px; /* Provides some spacing */
+    position: relative; /* To raise the z-index */
+    z-index: 2; /* Ensures the content appears above the line */
+}
+
+/* Add responsive behavior */
+@media screen and (max-width: 768px) {
+    .education-entry {
+        flex-direction: column;
+    }
+    .degree-info, .school-description {
+        justify-content: flex-start;
+        text-align: left;
+        padding: 10px;
+    }
+    .education-entry::before {
+        display: none; /* Hides the vertical line on smaller screens */
+    }
+}
+
+.education-section {
+    font-size: 18px; 
+}
+
+.education-section h3 {
+    font-size: 25px;
+}
+
+.education-section h4 {
+    font-size: 23px; 
+}
+
+.education-section p {
+    font-size: 21px;
 }
