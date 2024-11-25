@@ -508,6 +508,46 @@ li {
     margin-bottom: 30px;
 }
 
+/* Dishcovery Project Section */
+.Project-3 {
+    text-align: center;
+    margin-top: 75px;
+    padding: 20px;
+    color: white;
+}
+
+/* Center the project name */
+.Project-3 h1 {
+    margin-bottom: 20px;
+    color: var(--color-highlight);
+}
+
+/* Center the description */
+.Project-3 h2 {
+    max-width: 800px; /* Set a maximum width for better readability */
+    margin: 0 auto; /* Center-align */
+    font-size: 1.2rem;
+    line-height: 1.6; /* Add line spacing for better readability */
+}
+
+/* Dishcovery Images Section */
+.image-Dishcovery {
+    display: flex;
+    justify-content: center; /* Align images in the center */
+    gap: 20px; /* Add space between images */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin-top: 30px; /* Space between description and images */
+}
+
+/* Individual image styles */
+.image-Dishcovery img {
+    width: 55%; /* Take up 55% of the container width */
+    max-width: 520px; /* Limit the size of the images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Optional shadow */
+}
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .about-content {
