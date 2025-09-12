@@ -595,3 +595,70 @@ li {
         width: 90%; /* Full width on smaller screens */
     }
 }
+
+/* Certifications Section */
+#certifications-section {
+    text-align: center;
+    margin-top: 80px;
+    padding: 40px 20px;
+    color: var(--color-fg);
+}
+
+#certifications-section h1 {
+    font-size: 2.5rem;
+    color: var(--color-highlight);
+    margin-bottom: 15px;
+}
+
+#certifications-section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #ccc;
+}
+
+.cert-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cert-card {
+    background-color: #333;
+    border: 2px solid var(--color-highlight);
+    border-radius: 10px;
+    padding: 20px;
+    width: 320px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.cert-card:hover {
+    transform: scale(1.05);
+}
+
+.cert-card h2 {
+    color: var(--color-highlight);
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.cert-card p {
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.cert-card .download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-highlight);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.cert-card .download-btn:hover {
+    background-color: var(--color-link);
+}
